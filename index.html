@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Use our free online character counter to instantly count characters, words, spaces and lines. Perfect for social media captions, SEO content, assignments, essays and more.">
+  <!-- Open Graph (for social shares) -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Online Character Counter & Text Analyzer">
+<meta property="og:description" content="Free, fast, and accurate character counter with word, line and space counting. Ideal for social media, SEO and academic writing.">
+<meta property="og:url" content="https://yourdomain.com/tools/online-character-counter">
+<meta property="og:image" content="https://yourdomain.com/images/character-counter-og.jpg">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Online Character Counter & Text Analyzer">
+<meta name="twitter:description" content="Quickly count characters, words and lines with our free online counter.">
+<meta name="twitter:image" content="https://yourdomain.com/images/character-counter-og.jpg">
+  <link rel="canonical" href="https://yourdomain.com/tools/online-character-counter">
+  <title>Online Character Counter & Text Analyzer | Free Tool</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#top" class="brand">
+        <img src="images/logo.png" alt="Site Logo" class="brand-logo" />
+        <span class="brand-name">Online-Character-Counter</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#top" class="nav-link">Home</a>
+        <a href="#benefits" class="nav-link">Who Benefits</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="#contact" class="nav-link nav-contact">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero / Heading -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Online Character Counter & Word Counter Tool</h1>
+          <p>
+            Use a secure, instant counter for words, characters, sentences,
+             and more—great for social posts, essays, and all types of professional writing.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Counter Section -->
+    <section class="counter-section">
+      <div class="container counter-layout glass">
+        <div class="counter-input-wrapper">
+          <label for="text-input" class="section-label">Paste or type your text below</label>
+          <textarea
+            id="text-input"
+            placeholder="Start typing or paste your text here..."
+          ></textarea>
+        </div>
+        <aside class="counter-summary glass-secondary">
+          <h2>Text statistics</h2>
+          <p class="summary-subtitle">Live counts update as you type.</p>
+          <ul class="stats-list">
+            <li>
+              <span class="label">Words</span>
+              <span class="value" id="word-count">0</span>
+            </li>
+            <li>
+              <span class="label">Characters (with spaces)</span>
+              <span class="value" id="char-with-spaces">0</span>
+            </li>
+            <li>
+              <span class="label">Characters (without spaces)</span>
+              <span class="value" id="char-no-spaces">0</span>
+            </li>
+            <li>
+              <span class="label">Sentences</span>
+              <span class="value" id="sentence-count">0</span>
+            </li>
+            <li>
+              <span class="label">Paragraphs</span>
+              <span class="value" id="paragraph-count">0</span>
+            </li>
+            <li>
+              <span class="label">Estimated reading time</span>
+              <span class="value" id="reading-time">0 sec</span>
+            </li>
+          </ul>
+          <button id="clear-btn" class="btn-primary">Clear text</button>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Who benefits section -->
+    <section class="benefits-section" id="benefits">
+      <div class="container">
+        <header class="section-header">
+          <h2>Who benefits from a free character counter?</h2>
+          <p>
+            Anyone who works with words can benefit from precise word and character counts.
+            Here are some of the people who use tools like this every day.
+          </p>
+        </header>
+
+        <div class="benefit-grid">
+          
+
+          <!-- Students -->
+          <article class="benefit-card glass-card">
+            <div class="benefit-image-wrapper">
+              <img src="images/student.jpg" alt="Students" class="benefit-image" />
+            </div>
+            <div class="benefit-content">
+              <h3>Students</h3>
+              <p>
+                Make sure your essays, assignments, and applications meet required character
+                 limits while keeping your writing clean and effective.
+              </p>
+            </div>
+          </article>
+
+          <!-- Researchers -->
+          <article class="benefit-card glass-card">
+            <div class="benefit-image-wrapper">
+              <img src="images/researchers.jpg" alt="Researchers" class="benefit-image" />
+            </div>
+            <div class="benefit-content">
+              <h3>Researchers</h3>
+              <p>
+                Monitor word count instantly while writing research papers, theses,
+                 and scientific reports to stay within required limitsng.
+              </p>
+            </div>
+          </article>
+
+          <!-- Professionals -->
+          <article class="benefit-card glass-card">
+            <div class="benefit-image-wrapper">
+              <img src="images/professional.jpg" alt="Professionals" class="benefit-image" />
+            </div>
+            <div class="benefit-content">
+              <h3>Professionals</h3>
+              <p>
+                Write clear, concise business documents with real-time word and character tracking.
+              </p>
+            </div>
+          </article>
+
+
+          <!-- Journalists -->
+          <article class="benefit-card glass-card">
+            <div class="benefit-image-wrapper">
+              <img src="images/journalists.jpg" alt="Journalists" class="benefit-image" />
+            </div>
+            <div class="benefit-content">
+              <h3>Journalists</h3>
+              <p>
+                Keep headlines, leads, and article summaries sharp and within
+                strict editorial constraints.
+              </p>
+            </div>
+          </article>
+
+          <!-- Bloggers -->
+          <article class="benefit-card glass-card">
+            <div class="benefit-image-wrapper">
+              <img src="images/bloggers.jpg" alt="Bloggers" class="benefit-image" />
+            </div>
+            <div class="benefit-content">
+              <h3>Bloggers</h3>
+              <p>
+                Structure blog posts effortlessly with real-time word and
+                 character tracking for SEO-friendly writing.
+              </p>
+            </div>
+          </article>
+
+          <!-- Marketers -->
+          <article class="benefit-card glass-card">
+            <div class="benefit-image-wrapper">
+              <img src="images/marketers.jpg" alt="Marketers" class="benefit-image" />
+            </div>
+            <div class="benefit-content">
+              <h3>Marketers</h3>
+              <p>
+                Test multiple versions of campaign messages and quickly compare
+                their length and readability.
+              </p>
+            </div>
+          </article>
+
+          
+          <!-- Social media managers -->
+          <article class="benefit-card glass-card">
+            <div class="benefit-image-wrapper">
+              <img src="images/social media manager.jpg" alt="Social media managers" class="benefit-image" />
+            </div>
+            <div class="benefit-content">
+              <h3>Social media managers</h3>
+              <p>
+                Optimize captions, tweets, and bios for platform limits without
+                sacrificing clarity or engagement.
+              </p>
+            </div>
+          </article>
+
+          <!-- Social media Creators -->
+          <article class="benefit-card glass-card">
+            <div class="benefit-image-wrapper">
+              <img src="images/social media creators.jpg" alt="Social media creators" class="benefit-image" />
+            </div>
+            <div class="benefit-content">
+              <h3>Social media creators</h3>
+              <p>
+                Fine-tune captions, hooks, and scripts with instant character 
+                and word count feedback
+              </p>
+            </div>
+          </article>
+
+          <!-- Copywriters -->
+          <article class="benefit-card glass-card">
+            <div class="benefit-image-wrapper">
+              <img src="images/copywriters.jpg" alt="Copywriters" class="benefit-image" />
+            </div>
+            <div class="benefit-content">
+              <h3>Copywriters</h3>
+              <p>
+                Perfect ad copy, taglines, and landing page text that fit design
+                layouts and character limits.
+              </p>
+            </div>
+          </article>
+
+          
+
+          <!-- Authors -->
+          <article class="benefit-card glass-card">
+            <div class="benefit-image-wrapper">
+              <img src="images/authors.jpg" alt="Authors" class="benefit-image" />
+            </div>
+            <div class="benefit-content">
+              <h3>Authors</h3>
+              <p>
+                Track chapter lengths, synopsis word counts, and submission
+                guidelines for contests and publishers.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+      <div class="container">
+        <header class="section-header">
+          <h2>Frequently Asked Questions</h2>
+          <p>
+            Find quick answers to common questions about how this character counter works
+            and how it can help you.
+          </p>
+        </header>
+
+        <div class="faq-list">
+          <article class="faq-item">
+            <button class="faq-question">
+              What is a character counter?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                A character counter is a tool that measures the number of characters,
+                words, and other text metrics in a piece of writing. It helps you stay
+                within platform or submission limits.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question">
+              Why should I use this character counter?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                With strict character limits across apps and forms, 
+                this free and secure character counter keeps your text within range, 
+                with full privacy so only you can view your content.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question">
+              What do 250 characters look like?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Roughly, 250 characters is about two to four short sentences depending
+                on your writing style. You can paste your text here to see exactly how
+                many characters it contains.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question">
+              Is my text stored or uploaded anywhere?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                No. This tool runs entirely in your browser using JavaScript. Your text
+                is not sent to any server or stored online.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question">
+              How is reading time calculated?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Reading time is estimated based on the average reading speed of
+                about 200 words per minute. It gives you a quick idea of how long it
+                might take someone to read your text.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question">
+              Does this tool work on mobile devices?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Yes. The layout is responsive and works on phones, tablets, and desktop
+                browsers without any additional setup.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question">
+              Can I use this tool for social media posts?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Absolutely. It is ideal for platforms like X (Twitter), Instagram,
+                LinkedIn, and others where character limits are important.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question">
+              Do I need to install anything?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                No installation is required. Just open this page in your browser and
+                start typing or pasting your text.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer / Contact -->
+  <footer class="footer" id="contact">
+    <div class="container footer-inner">
+      <div class="footer-column">
+        <h3>About this tool</h3>
+        <p>
+          A simple, fast, and privacy-friendly character counter that helps you
+          stay in control of your writing.
+        </p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Connect</h3>
+        <ul class="footer-list social-links">
+          <li><a href="https://www.facebook.com/Nabil428" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+          <li><a href="https://www.linkedin.com/in/nabil428/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Other tools or sites you may need</h3>
+        <ul class="footer-list">
+          <li><a href="#" target="_blank" rel="noopener noreferrer">Unit Converter</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Free Character Counter. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
